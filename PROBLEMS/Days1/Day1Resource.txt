@@ -1,4 +1,4 @@
-We have to study about the array DSA.
+You have to study about the array DSA.
 
 Go through all link on the below link
 https://www.geeksforgeeks.org/string-data-structure/
@@ -20,4 +20,4 @@ https://www.geeksforgeeks.org/camel-case-given-sentence/
 HackerRank in a String
 https://www.geeksforgeeks.org/check-string-substring-another/
 
-if you do able to solve Then check it geekforgeek then try again by yourself in your idea.
+if you do not able to solve Then check it on geekforgeek then try again by yourself in your IDE.
