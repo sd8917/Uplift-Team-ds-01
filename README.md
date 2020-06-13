@@ -25,3 +25,6 @@ First of all, every student has to make their own directory With there full name
 10. Execute, ``git push origin_user <your-current-branch>``.
 
 11. Make PR.
+
+
+**The Timeline of the event can be viewed here - https://github.com/Abhijit2505/Uplift-Team-ds-01/blob/master/Timeline.md**
