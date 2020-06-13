@@ -1,4 +1,4 @@
-We have to study about the array DSA.
+You have to study about the array DSA.
 
 Go through all link on the below link
 https://www.geeksforgeeks.org/string-data-structure/
