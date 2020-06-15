@@ -1,0 +1,5 @@
+Arrays Problems
+https://leetcode.com/explore/featured/card/fun-with-arrays/
+
+More on Arrays:
+https://www.hackerearth.com/practice/data-structures/arrays/1-d/practice-problems/
