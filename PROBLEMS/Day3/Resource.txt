@@ -1,0 +1,10 @@
+WE HAVE READ THE FOLLOWING
+->Compile Time Memory Allocation
+->Dyanmic Memory Allocation
+->Using New and Delete Operators
+->Allocating 2D Dyanmic Arrays
+->Returning Local Arrays vs Dyanmic Arrays.
+
+for cpp -
+
+https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/
