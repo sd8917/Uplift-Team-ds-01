@@ -1,0 +1,14 @@
+Easy:
+https://leetcode.com/problems/find-pivot-index/
+https://leetcode.com/problems/maximum-average-subarray-i/
+https://leetcode.com/problems/minimum-absolute-difference/
+https://leetcode.com/problems/majority-element/
+
+Medium:
+https://leetcode.com/problems/count-square-submatrices-with-all-ones/
+https://leetcode.com/problems/find-all-duplicates-in-an-array/
+https://leetcode.com/problems/4sum/
+
+Hard:
+https://leetcode.com/problems/first-missing-positive/
+https://leetcode.com/problems/median-of-two-sorted-arrays/
