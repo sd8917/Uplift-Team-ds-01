@@ -109,7 +109,22 @@ void InsertAtMid(node* &head,node* &tail,int pos,int data){
 	}
 }
 
-void deletionAtFront(node*&head,node*&tail){
+/*
+    if head->nULL; THEN WE RETURN
+    else if head->100 means there is a node we check for the what the head->next contains if NULL then
+        delete head and head and teil both are same point to NULL
+
+    else
+        1->2->3->NULL;
+        |
+        head
+
+        temp = head;
+        head ko store kr lo by using head = head->next;
+        delete temp.
+
+*/
+void DeleteAtFront(node*&head,node*&tail){
     if(head==NULL){
         return;
     }else if(head->next == NULL){
@@ -123,6 +138,55 @@ void deletionAtFront(node*&head,node*&tail){
     }
 }
 
+/*
+    same a above two point
+    1.head== NULL
+    2.head->next ==NULL;
+    3.point is to think???
+
+
+*/
+void deletionAtEnd(node*&head,node*&tail){
+
+    if(head== NULL){
+        return;
+    }else if(head->next==NULL){
+        node*temp = head;
+        head=head->next;
+        delete temp;
+    }
+    else{
+        node*temp = head;
+        while(temp->next!=tail){
+            temp = temp->next;
+        }
+        delete tail;
+        tail = temp;
+        temp->next = NULL;
+    }
+}
+
+
+void DeleteAtMid(node* &head,node* &tail,int pos){
+	if(pos == 0){
+		DeleteAtFront(head,tail);
+	}
+	else if(pos>=lengthLL(head)-1){
+		deletionAtEnd(head,tail);
+	}
+	else{
+		node* temp = head;
+		int count = 1;
+		while(count<=pos-1){
+			temp = temp->next;
+			count++;
+		}
+		node* n = temp->next;
+		temp->next = n->next;
+		delete n;
+	}
+}
+
 //*  Print function to print the node    *//
 void Print(node* head){
 
@@ -132,6 +196,32 @@ void Print(node* head){
 	}
 	cout<<"NULL"<<endl;
 }
+
+node* SearchLL(node* head,int key){
+
+	while(head){
+		if(head->data == key){
+			return head;
+		}
+		head =head->next;
+	}
+	return NULL;
+}
+
+
+void ReverseLL(node* &head,node* &tail){
+	node* p = NULL;
+	node* c = head;
+	while(c){
+		node* n = c->next;
+		c->next = p;
+		p = c;
+		c = n;
+	}
+	tail = head;
+	head = p;
+}
+
 
 
 int main(){
@@ -147,7 +237,22 @@ int main(){
     InsertAtMid(head,tail,3,0);
 
     Print(head);
-    deletionAtFront(head,tail);
+    DeleteAtFront(head,tail);
+    Print(head);
+    deletionAtEnd(head,tail);
+    Print(head);
+
+    /*
+    node*ans = SearchLL(head, 3);
+    if(ans->data!=NULL){
+        cout<<"Node found!!"<<endl;
+    }
+    else {
+        cout<<"Node not found!!"<<endl;
+    }
+    */
+
+    ReverseLL(head,tail);
     Print(head);
 
     return 0;
