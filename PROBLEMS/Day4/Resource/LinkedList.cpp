@@ -209,6 +209,29 @@ node* SearchLL(node* head,int key){
 }
 
 
+/*
+    The idea traverse the linked list
+    and reverse the pointer of each node
+    eg:-
+    1->2->3->NULL
+    After reversing the array
+    NULL<-1<-2<-3
+
+    so, we will take two pointer
+    node* p = NULL;
+    node*c = head;
+
+    jab tak hm c ko null tak nhi pahucha dete hai tab loop kro
+    node*n = c->next;
+    c->next = p;
+    p = c;
+    c = n;
+
+    and after loop we will change the pointer from tail to head and head to p;
+
+*/
+
+
 void ReverseLL(node* &head,node* &tail){
 	node* p = NULL;
 	node* c = head;
