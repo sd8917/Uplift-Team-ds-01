@@ -208,6 +208,22 @@ node* SearchLL(node* head,int key){
 	return NULL;
 }
 
+//Search for the element using recursive methods.
+
+node* SearchRecursivelyLL(node* head,int key){
+	// Base case
+	if(head == NULL){
+		return NULL;
+	}
+
+	// Recursive case
+	if(head->data == key){
+		return head;
+	}
+	node* ans = SearchRecursivelyLL(head->next,key);
+	return ans;
+}
+
 
 /*
     The idea traverse the linked list
